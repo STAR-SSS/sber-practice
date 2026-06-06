@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green-light: #c7f4db;
+  --green-mid: #54c27b;
+  --green-dark: #21a354;
+  --bg: #f5fdf8;
+  --bg-card: #ffffff;
+  --bg-nav: #ffffff;
+  --text-primary: #0d1f14;
+  --text-secondary: #4a6358;
+  --text-muted: #8aab97;
+  --border: #d8f0e5;
+  --shadow: 0 4px 24px rgba(33, 163, 84, 0.08);
+  --shadow-hover: 0 8px 40px rgba(33, 163, 84, 0.18);
+  --input-bg: #f0faf4;
+  --error: #e53935;
+  --nav-height: 64px;
+  --radius: 16px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #0a130d;
+  --bg-card: #111d14;
+  --bg-nav: #0d1a10;
+  --text-primary: #e8f5ec;
+  --text-secondary: #8abf9a;
+  --text-muted: #4a6e57;
+  --border: #1e3325;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 8px 40px rgba(84, 194, 123, 0.15);
+  --input-bg: #162219;
+  --green-light: #1e3d29;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  transition: background-color var(--transition), color var(--transition);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--green-dark);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--green-mid);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Inter', sans-serif;
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+}
